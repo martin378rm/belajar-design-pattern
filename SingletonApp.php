@@ -17,6 +17,9 @@ function testConnection()
   $connection1 = DatabaseHelper::getConnection();
   $connection2 = DatabaseHelper::getConnection();
 
+  var_dump($connection1);
+  var_dump($connection2);
+
 
   if ($connection1 === $connection2) {
     echo "Singleton";
